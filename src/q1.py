@@ -13,6 +13,6 @@ Getting your setup ready is the hardest part of the semester.
 This question is designed to give you points for getting your GitHub and 
 Pawtograder setup working, and making a successful submission."""
 
-def print_meow() -> None:
-    """Prints 'meow' to the console."""
-    print("meow")
+def print_interests() -> None:
+    """Prints my interests into the console."""
+    print("Testing")
