@@ -15,4 +15,4 @@ Pawtograder setup working, and making a successful submission."""
 
 def print_interests() -> None:
     """Prints my interests into the console."""
-    print("Testing")
+    print("I am interested in computing because(test2).")
