@@ -1,27 +1,24 @@
-"""HW1 Question 2
-
-Please implement the following function according to the provided documentation.
-Tests are provided for this question in the file tests/test_q2.py."""
+"""HW1 Question 2"""
 
 def validate_password(password: str) -> bool:
-    """Determines whether a password meets the requirements.
+    if len(password) < 8:
+        return False
+    has_upper = False
+    has_lower = False
+    has_digit = False
+    has_special = False
+    special_chars = "!@#$%^&*"
 
-    Requirements:
-    1. Password must be at least 8 characters long
-    2. Password must contain at least one uppercase letter
-    3. Password must contain at least one lowercase letter
-    4. Password must contain at least one digit
-    5. Password must contain at least one special character (!@#$%^&*)
-
-    
-    Parameters
-    ----------
-    password : str
-        The password to validate
-    
-    Returns
-    -------
-    bool
-        True if the password is valid, and false otherwise
-    """
-    pass
+    for char in password:
+        if char.isupper():
+            has_upper = True
+        elif char.islower():
+            has_lower = True
+        elif char.isdigit():
+            has_digit = True
+        elif char in special_chars:
+            has_special = True
+    """Variable to check if all conditions are met"""
+    valid_password = has_upper and has_lower and has_digit and has_special
+    return valid_password
+print(validate_password("Password1!"))
