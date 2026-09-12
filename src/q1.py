@@ -14,5 +14,8 @@ This question is designed to give you points for getting your GitHub and
 Pawtograder setup working, and making a successful submission."""
 
 def print_interests() -> None:
-    """Prints my interests into the console."""
-    print("I am interested in computing because(test2).")
+    """Prints my interest in computing."""
+    print("I am interested in computing because my older brother was also a computer \n" \
+    "science major. Along with that, my high school courses teaching us Python and Java \n" \
+    "were particularly fascinating and required complex problem solving skills.")
+print_interests()
