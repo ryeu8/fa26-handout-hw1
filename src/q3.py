@@ -9,6 +9,7 @@ def capitalize_words(s: str) -> str:
     """Capitalizes the first letter of each word in a string.
 
     A word is defined as a sequence of characters separated by spaces.
+    
     If a word starts with a non-letter character, the first letter after 
     that character is capitalized instead, and the non-letter character at
     the start of the word is left unchanged.

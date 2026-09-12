@@ -21,4 +21,3 @@ def validate_password(password: str) -> bool:
     """Variable to check if all conditions are met"""
     valid_password = has_upper and has_lower and has_digit and has_special
     return valid_password
-
